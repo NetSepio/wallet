@@ -1,10 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/models/send_transaction_model.dart';
-import 'package:wallet/view/send/send_ctr.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/models/send_transaction_model.dart';
+import 'package:nucleus/view/send/send_ctr.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 class TokenCompleteScreen extends StatelessWidget {
   final String tokenAddress;

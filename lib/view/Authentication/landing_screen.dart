@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 class LandingScreen extends StatelessWidget {
   const LandingScreen({super.key});
@@ -19,7 +19,7 @@ class LandingScreen extends StatelessWidget {
             children: [
               Image.asset("assets/images/logo.png", height: Get.height * .3),
               const Text(
-                "Secure and easy\n to use wallet",
+                "Secure and easy\n to use Nucleus",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 20,

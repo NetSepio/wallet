@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 class AuthCompleteScreen extends StatelessWidget {
   const AuthCompleteScreen({super.key});
@@ -36,7 +36,7 @@ class AuthCompleteScreen extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                     child: Text(
-                      "You have successfully protected your wallet. Keep your recovery passphrase safe. This is your responsibility!",
+                      "You have successfully protected your nucleus. Keep your recovery passphrase safe. This is your responsibility!",
                       style: TextStyle(
                           color: white,
                           fontSize: 16,

@@ -5,10 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/utils/secure_storage.dart';
-import 'package:wallet/view/Authentication/generate_phrase_screen.dart';
-import 'package:wallet/view/Authentication/lock_screen.dart';
-import 'package:wallet/web3dart/web3dart.dart';
+import 'package:nucleus/utils/secure_storage.dart';
+import 'package:nucleus/view/Authentication/lock_screen.dart';
+import 'package:nucleus/web3dart/web3dart.dart';
 
 class AuthController extends GetxController {
   final storage = SecureStorage();
@@ -122,7 +121,7 @@ class AuthController extends GetxController {
       if (tohome) {
         Get.offNamed("/dashboard");
       } else {
-        if (navigation) {
+        if (navigation != null) {
           navigation;
         }
         Get.back();
@@ -196,7 +195,7 @@ class LocalAuthApi {
     if (!isAvailable) return false;
     try {
       return await _auth.authenticate(
-        localizedReason: 'Wallet needs fingerprint to authenticate',
+        localizedReason: 'Nucleus needs fingerprint to authenticate',
         options: const AuthenticationOptions(
           biometricOnly: false,
           useErrorDialogs: true,

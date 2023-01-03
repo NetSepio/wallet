@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/models/transaction_history_model.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/Home/home_ctr.dart';
-import 'package:wallet/view/send/send_ctr.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/models/transaction_history_model.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/Home/home_ctr.dart';
+import 'package:nucleus/view/send/send_ctr.dart';
+import 'package:nucleus/view/widgets/common.dart';
 import 'package:web3dart/web3dart.dart';
 
 class TransactionCompleteScreen extends StatelessWidget {
@@ -92,8 +92,7 @@ class TransactionCompleteScreen extends StatelessWidget {
                         status: snapshot.data!.values.first.status.toString(),
                         from: snapshot.data!.values.first.from.toString(),
                         to: snapshot.data!.values.first.to.toString(),
-                        gasUsed: snapshot.data!.values.first.gasUsed
-                            .toString(),
+                        gasUsed: snapshot.data!.values.first.gasUsed.toString(),
                         effectiveGasPrice: snapshot
                             .data!.values.first.effectiveGasPrice
                             .toString(),

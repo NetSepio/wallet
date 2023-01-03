@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/utils/secure_storage.dart';
-import 'package:wallet/view/Home/home_ctr.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/Authentication/auth_controller.dart';
-import 'package:wallet/view/Authentication/generate_phrase_screen.dart';
-import 'package:wallet/view/Authentication/reset_password.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/utils/secure_storage.dart';
+import 'package:nucleus/view/Home/home_ctr.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/Authentication/auth_controller.dart';
+import 'package:nucleus/view/Authentication/generate_phrase_screen.dart';
+import 'package:nucleus/view/Authentication/reset_password.dart';
+import 'package:nucleus/view/widgets/common.dart';
 import 'package:web3dart/web3dart.dart';
 
 class SettingScreen extends StatelessWidget {
@@ -164,7 +164,7 @@ class SettingScreen extends StatelessWidget {
                       ontap: () {
                         checkLock(true,
                             splash: false,
-                            navigation: Get.off(() => const GenerateSeedPhrase(
+                            navigation: Get.to(() => const GenerateSeedPhrase(
                                   view: true,
                                 )));
                       },
@@ -223,7 +223,7 @@ class SettingScreen extends StatelessWidget {
                         Icons.info_outline,
                         color: blue,
                       ),
-                      text: "About wallet",
+                      text: "About Nucleus",
                       ontap: () => Get.toNamed("/aboutWalletScreen"),
                     ),
                     height(10),
@@ -280,14 +280,14 @@ class SettingScreen extends StatelessWidget {
                     ),
                     height(10),
                     const Text(
-                      "Wallet",
+                      "Nucleus",
                       style: TextStyle(
                         fontSize: 18,
                         color: grey,
                       ),
                     ),
                     const Text(
-                      "Copyright © wallet 2022",
+                      "Copyright © nucleus 2022",
                       style: TextStyle(
                         fontSize: 12,
                         color: grey,

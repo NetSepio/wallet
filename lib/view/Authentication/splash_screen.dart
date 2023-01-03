@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 child: Image.asset("assets/images/logo.png")),
             height(25),
             const Text(
-              "Wallet",
+              "Nucleus",
               style: TextStyle(
                   fontSize: 30, color: white, fontWeight: FontWeight.bold),
             )

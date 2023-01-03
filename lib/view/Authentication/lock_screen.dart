@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/Authentication/auth_controller.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/Authentication/auth_controller.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 class LockScreen extends StatelessWidget {
   final bool createPIN;

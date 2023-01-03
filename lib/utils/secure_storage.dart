@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:hive/hive.dart';
-import 'package:wallet/models/nft_model.dart';
-import 'package:wallet/models/token_model.dart';
+import 'package:nucleus/models/nft_model.dart';
+import 'package:nucleus/models/token_model.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:wallet/models/transaction_history_model.dart';
+import 'package:nucleus/models/transaction_history_model.dart';
 
 class SecureStorage {
   final storage = const FlutterSecureStorage();

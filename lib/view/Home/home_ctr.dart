@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:wallet/models/nft_model.dart';
-import 'package:wallet/models/token_model.dart';
-import 'package:wallet/models/transaction_history_model.dart';
-import 'package:wallet/utils/secure_storage.dart';
-import 'package:wallet/web3dart/web3dart.dart';
+import 'package:nucleus/models/nft_model.dart';
+import 'package:nucleus/models/token_model.dart';
+import 'package:nucleus/models/transaction_history_model.dart';
+import 'package:nucleus/utils/secure_storage.dart';
+import 'package:nucleus/web3dart/web3dart.dart';
 import 'package:web3dart/web3dart.dart';
 
 var box = Boxes.getdarkModeBox;

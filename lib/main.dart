@@ -2,32 +2,32 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
-import 'package:wallet/models/nft_model.dart';
-import 'package:wallet/models/token_model.dart';
-import 'package:wallet/models/transaction_history_model.dart';
-import 'package:wallet/view/Dashboard/dashboard.dart';
-import 'package:wallet/view/Home/home_ctr.dart';
-import 'package:wallet/view/nft/nft.dart';
-import 'package:wallet/view/send/history_details.dart';
-import 'package:wallet/view/setting/about_wallet.dart';
-import 'package:wallet/view/setting/addtoken_screen.dart';
-import 'package:wallet/view/Receive/receive_screen.dart';
-import 'package:wallet/view/Authentication/auth_complete_screen.dart';
-import 'package:wallet/view/Authentication/import_account_screen.dart';
-import 'package:wallet/view/Authentication/intro_screen.dart';
-import 'package:wallet/view/Authentication/lock_screen.dart';
-import 'package:wallet/view/Authentication/generate_phrase_screen.dart';
-import 'package:wallet/view/Authentication/verify_phrase_screen.dart';
-import 'package:wallet/view/Authentication/splash_screen.dart';
-import 'package:wallet/view/Authentication/landing_screen.dart';
-import 'package:wallet/view/home/home.dart';
-import 'package:wallet/view/send/send_screen.dart';
-import 'package:wallet/view/send/transaction_complete_screen.dart';
-import 'package:wallet/view/setting/mywallet.dart';
-import 'package:wallet/view/setting/setting.dart';
-import 'package:wallet/utils/theme.dart';
+import 'package:nucleus/models/nft_model.dart';
+import 'package:nucleus/models/token_model.dart';
+import 'package:nucleus/models/transaction_history_model.dart';
+import 'package:nucleus/view/dashboard/dashboard.dart';
+import 'package:nucleus/view/Home/home_ctr.dart';
+import 'package:nucleus/view/nft/nft.dart';
+import 'package:nucleus/view/send/history_details.dart';
+import 'package:nucleus/view/setting/about_wallet.dart';
+import 'package:nucleus/view/setting/addtoken_screen.dart';
+import 'package:nucleus/view/receive/receive_screen.dart';
+import 'package:nucleus/view/Authentication/auth_complete_screen.dart';
+import 'package:nucleus/view/Authentication/import_account_screen.dart';
+import 'package:nucleus/view/Authentication/intro_screen.dart';
+import 'package:nucleus/view/Authentication/lock_screen.dart';
+import 'package:nucleus/view/Authentication/generate_phrase_screen.dart';
+import 'package:nucleus/view/Authentication/verify_phrase_screen.dart';
+import 'package:nucleus/view/Authentication/splash_screen.dart';
+import 'package:nucleus/view/Authentication/landing_screen.dart';
+import 'package:nucleus/view/home/home.dart';
+import 'package:nucleus/view/send/send_screen.dart';
+import 'package:nucleus/view/send/transaction_complete_screen.dart';
+import 'package:nucleus/view/setting/mywallet.dart';
+import 'package:nucleus/view/setting/setting.dart';
+import 'package:nucleus/utils/theme.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -90,7 +90,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Wallet',
+      title: 'Nucleus',
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       darkTheme: darkTheme,

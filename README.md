@@ -1,2 +1,2 @@
-# wallet
-NetSepio Wallet App for Android and iOS built with Flutter
+# Nucleus
+NetSepio Nucleus App for Android and iOS built with Flutter

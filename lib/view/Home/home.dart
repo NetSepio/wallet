@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:wallet/view/Home/home_ctr.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/Home/token_detail_screen.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/view/Home/home_ctr.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/Home/token_detail_screen.dart';
+import 'package:nucleus/view/widgets/common.dart';
 import 'package:web3dart/web3dart.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -409,7 +409,7 @@ class HomeScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const SizedBox(width: 24),
-          const Text("Wallet",
+          const Text("Nucleus",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:concentric_transition/concentric_transition.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/utils/theme.dart';
+import 'package:nucleus/utils/theme.dart';
 
 final pages = [
   PageData(
     icon: Lottie.asset('assets/lottiefiles/2.json'),
-    title: "Secure and easy\n to use wallet",
+    title: "Secure and easy\n to use Nucleus",
     bgColor: black,
     textColor: Colors.white,
   ),

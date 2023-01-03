@@ -2,12 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/utils/secure_storage.dart';
-import 'package:wallet/view/Authentication/generate_phrase_screen.dart';
-import 'package:wallet/view/Home/home_ctr.dart';
-import 'package:wallet/view/Authentication/auth_controller.dart';
-import 'package:wallet/view/Authentication/lock_screen.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/utils/secure_storage.dart';
+import 'package:nucleus/view/Home/home_ctr.dart';
+import 'package:nucleus/view/Authentication/auth_controller.dart';
+import 'package:nucleus/view/Authentication/lock_screen.dart';
 
 height(double height) => SizedBox(height: height);
 width(double width) => SizedBox(width: width);
@@ -26,7 +25,7 @@ void checkLock(bool check, {required bool splash, navigation}) async {
         }
       } else {
         if (navigation != null) {
-          Get.off(() => LockScreen(
+          Get.to(() => LockScreen(
               createPIN: false, splash: splash, navigation: navigation));
         } else {
           Get.to(() => LockScreen(createPIN: false, splash: splash));
@@ -125,7 +124,7 @@ class NoData extends StatelessWidget {
         child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Lottie.asset("assets/lottiefiles/nodata.json", height: 130),
+        Lottie.asset("assets/lottiefiles/nodata.json", height: 110),
       ],
     ));
   }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/Home/home.dart';
-import 'package:wallet/view/nft/nft.dart';
-import 'package:wallet/view/setting/setting.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/Home/home.dart';
+import 'package:nucleus/view/nft/nft.dart';
+import 'package:nucleus/view/setting/setting.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});

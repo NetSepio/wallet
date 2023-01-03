@@ -2,9 +2,9 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wallet/view/Authentication/auth_controller.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/view/Authentication/auth_controller.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 class GenerateSeedPhrase extends StatefulWidget {
   final bool view;
@@ -15,7 +15,6 @@ class GenerateSeedPhrase extends StatefulWidget {
 }
 
 class _GenerateSeedPhraseState extends State<GenerateSeedPhrase> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,7 +98,7 @@ class _GenerateSeedPhraseState extends State<GenerateSeedPhrase> {
                                     margin: const EdgeInsets.symmetric(
                                         horizontal: 12, vertical: 10),
                                     padding: const EdgeInsets.only(
-                                        left: 12, top: 10, bottom: 8),
+                                        left: 10, top: 10, bottom: 8, right: 6),
                                     child: Text(
                                       "${index + 1}. ${controller.phrase[index]}",
                                       style: const TextStyle(
@@ -127,7 +126,10 @@ class _GenerateSeedPhraseState extends State<GenerateSeedPhrase> {
                                       margin: const EdgeInsets.symmetric(
                                           horizontal: 12, vertical: 10),
                                       padding: const EdgeInsets.only(
-                                        left: 12, top: 10, bottom: 8),
+                                          left: 10,
+                                          top: 10,
+                                          bottom: 8,
+                                          right: 6),
                                       child: Text(
                                         "${index + 1}. ${controller.phrase[index]}",
                                         style: const TextStyle(

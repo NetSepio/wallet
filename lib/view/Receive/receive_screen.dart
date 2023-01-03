@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:wallet/utils/theme.dart';
-import 'package:wallet/utils/secure_storage.dart';
-import 'package:wallet/view/widgets/common.dart';
+import 'package:nucleus/utils/theme.dart';
+import 'package:nucleus/utils/secure_storage.dart';
+import 'package:nucleus/view/widgets/common.dart';
 
 class ReceiveScreen extends StatelessWidget {
   const ReceiveScreen({super.key});
