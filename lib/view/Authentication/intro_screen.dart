@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:concentric_transition/concentric_transition.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nucleus/utils/theme.dart';
+import 'package:NetSepio/utils/theme.dart';
 
 final pages = [
   PageData(
     icon: Lottie.asset('assets/lottiefiles/2.json'),
-    title: "Secure and easy\n to use Nucleus",
+    title: "Secure and easy\n to use NetSepio",
     bgColor: black,
     textColor: Colors.white,
   ),

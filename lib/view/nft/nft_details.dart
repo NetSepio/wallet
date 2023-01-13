@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:nucleus/utils/theme.dart';
-import 'package:nucleus/view/widgets/common.dart';
+import 'package:NetSepio/utils/theme.dart';
+import 'package:NetSepio/view/widgets/common.dart';
 
 class NftDetails extends StatelessWidget {
   final Map data;

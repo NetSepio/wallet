@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:nucleus/models/token_model.dart';
-import 'package:nucleus/utils/theme.dart';
-import 'package:nucleus/view/Home/home_ctr.dart';
-import 'package:nucleus/view/send/send_screen.dart';
+import 'package:NetSepio/models/token_model.dart';
+import 'package:NetSepio/utils/theme.dart';
+import 'package:NetSepio/view/Home/home_ctr.dart';
+import 'package:NetSepio/view/send/send_screen.dart';
 
 class TokenDetailScreen extends StatelessWidget {
   final TokenModel token;

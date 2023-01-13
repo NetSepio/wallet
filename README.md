@@ -1,2 +1,2 @@
-# Nucleus
-NetSepio Nucleus App for Android and iOS built with Flutter
+# NetSepio
+NetSepio NetSepio App for Android and iOS built with Flutter

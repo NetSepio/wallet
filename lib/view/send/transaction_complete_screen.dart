@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nucleus/models/transaction_history_model.dart';
-import 'package:nucleus/utils/theme.dart';
-import 'package:nucleus/view/Home/home_ctr.dart';
-import 'package:nucleus/view/send/send_ctr.dart';
-import 'package:nucleus/view/widgets/common.dart';
+import 'package:NetSepio/models/transaction_history_model.dart';
+import 'package:NetSepio/utils/theme.dart';
+import 'package:NetSepio/view/Home/home_ctr.dart';
+import 'package:NetSepio/view/send/send_ctr.dart';
+import 'package:NetSepio/view/widgets/common.dart';
 import 'package:web3dart/web3dart.dart';
 
 class TransactionCompleteScreen extends StatelessWidget {

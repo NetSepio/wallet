@@ -5,9 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nucleus/utils/secure_storage.dart';
-import 'package:nucleus/view/Authentication/lock_screen.dart';
-import 'package:nucleus/web3dart/web3dart.dart';
+import 'package:NetSepio/utils/secure_storage.dart';
+import 'package:NetSepio/view/Authentication/lock_screen.dart';
+import 'package:NetSepio/web3dart/web3dart.dart';
 
 class AuthController extends GetxController {
   final storage = SecureStorage();
@@ -195,7 +195,7 @@ class LocalAuthApi {
     if (!isAvailable) return false;
     try {
       return await _auth.authenticate(
-        localizedReason: 'Nucleus needs fingerprint to authenticate',
+        localizedReason: 'NetSepio needs fingerprint to authenticate',
         options: const AuthenticationOptions(
           biometricOnly: false,
           useErrorDialogs: true,

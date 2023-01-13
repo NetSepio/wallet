@@ -5,7 +5,7 @@ import 'package:decimal/decimal.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:nucleus/view/Home/home_ctr.dart';
+import 'package:NetSepio/view/Home/home_ctr.dart';
 import 'package:web3dart/json_rpc.dart';
 import 'package:web3dart/web3dart.dart';
 import 'package:bip32/bip32.dart' as bip32;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter/services.dart';
-import 'package:nucleus/utils/theme.dart';
+import 'package:NetSepio/utils/theme.dart';
 
 class AboutWalletScreen extends StatefulWidget {
   const AboutWalletScreen({super.key});
@@ -55,7 +55,7 @@ class _AboutWalletScreenState extends State<AboutWalletScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("About Nucleus"),
+        title: const Text("About NetSepio"),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),

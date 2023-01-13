@@ -1,13 +1,14 @@
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
-import 'package:nucleus/models/nft_model.dart';
-import 'package:nucleus/models/token_model.dart';
-import 'package:nucleus/models/transaction_history_model.dart';
-import 'package:nucleus/utils/secure_storage.dart';
-import 'package:nucleus/web3dart/web3dart.dart';
+import 'package:NetSepio/models/nft_model.dart';
+import 'package:NetSepio/models/token_model.dart';
+import 'package:NetSepio/models/transaction_history_model.dart';
+import 'package:NetSepio/utils/secure_storage.dart';
+import 'package:NetSepio/web3dart/web3dart.dart';
 import 'package:web3dart/web3dart.dart';
 
 var box = Boxes.getdarkModeBox;
+
 class HomeController extends GetxController {
   RxBool history = false.obs;
   RxBool showERC721 = false.obs;
@@ -15,8 +16,7 @@ class HomeController extends GetxController {
   final Box _currentNetwork = Boxes.getCurrentNetworkBox;
   final Box<TokenModel> _tokenOnCurrentNetwork =
       Boxes.getTokenOnCurrentNetworkBox;
-  final Box<NFTModel> _nftOnCurrentNetwork =
-      Boxes.getNFTOnCurrentNetworkBox;
+  final Box<NFTModel> _nftOnCurrentNetwork = Boxes.getNFTOnCurrentNetworkBox;
   final Box<TransactionHistory> _transactionOnCurrentNetwork =
       Boxes.getTransactionOnCurrentNetworkBox;
 
@@ -65,6 +65,7 @@ class HomeController extends GetxController {
         .where((element) => element.currentNetwork == getCurrentNetwork)
         .toList();
   }
+
   List<TransactionHistory>? get getTransactionBasedOnCurrentNetwork {
     return _transactionOnCurrentNetwork.values
         .where((element) => element.currentNetwork == getCurrentNetwork)

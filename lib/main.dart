@@ -2,32 +2,32 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
-import 'package:nucleus/models/nft_model.dart';
-import 'package:nucleus/models/token_model.dart';
-import 'package:nucleus/models/transaction_history_model.dart';
-import 'package:nucleus/view/dashboard/dashboard.dart';
-import 'package:nucleus/view/Home/home_ctr.dart';
-import 'package:nucleus/view/nft/nft.dart';
-import 'package:nucleus/view/send/history_details.dart';
-import 'package:nucleus/view/setting/about_wallet.dart';
-import 'package:nucleus/view/setting/addtoken_screen.dart';
-import 'package:nucleus/view/receive/receive_screen.dart';
-import 'package:nucleus/view/Authentication/auth_complete_screen.dart';
-import 'package:nucleus/view/Authentication/import_account_screen.dart';
-import 'package:nucleus/view/Authentication/intro_screen.dart';
-import 'package:nucleus/view/Authentication/lock_screen.dart';
-import 'package:nucleus/view/Authentication/generate_phrase_screen.dart';
-import 'package:nucleus/view/Authentication/verify_phrase_screen.dart';
-import 'package:nucleus/view/Authentication/splash_screen.dart';
-import 'package:nucleus/view/Authentication/landing_screen.dart';
-import 'package:nucleus/view/home/home.dart';
-import 'package:nucleus/view/send/send_screen.dart';
-import 'package:nucleus/view/send/transaction_complete_screen.dart';
-import 'package:nucleus/view/setting/mywallet.dart';
-import 'package:nucleus/view/setting/setting.dart';
-import 'package:nucleus/utils/theme.dart';
+import 'package:NetSepio/models/nft_model.dart';
+import 'package:NetSepio/models/token_model.dart';
+import 'package:NetSepio/models/transaction_history_model.dart';
+import 'package:NetSepio/view/Dashboard/dashboard.dart';
+import 'package:NetSepio/view/Home/home.dart';
+import 'package:NetSepio/view/Receive/receive_screen.dart';
+import 'package:NetSepio/view/Home/home_ctr.dart';
+import 'package:NetSepio/view/nft/nft.dart';
+import 'package:NetSepio/view/send/history_details.dart';
+import 'package:NetSepio/view/setting/about_wallet.dart';
+import 'package:NetSepio/view/setting/addtoken_screen.dart';
+import 'package:NetSepio/view/Authentication/auth_complete_screen.dart';
+import 'package:NetSepio/view/Authentication/import_account_screen.dart';
+import 'package:NetSepio/view/Authentication/intro_screen.dart';
+import 'package:NetSepio/view/Authentication/lock_screen.dart';
+import 'package:NetSepio/view/Authentication/generate_phrase_screen.dart';
+import 'package:NetSepio/view/Authentication/verify_phrase_screen.dart';
+import 'package:NetSepio/view/Authentication/splash_screen.dart';
+import 'package:NetSepio/view/Authentication/landing_screen.dart';
+import 'package:NetSepio/view/send/send_screen.dart';
+import 'package:NetSepio/view/send/transaction_complete_screen.dart';
+import 'package:NetSepio/view/setting/mywallet.dart';
+import 'package:NetSepio/view/setting/setting.dart';
+import 'package:NetSepio/utils/theme.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:nucleus/view/widgets/common.dart';
+import 'package:NetSepio/view/widgets/common.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -90,7 +90,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Nucleus',
+      title: 'NetSepio',
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       darkTheme: darkTheme,

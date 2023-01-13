@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nucleus/view/Home/home_ctr.dart';
+import 'package:NetSepio/view/Home/home_ctr.dart';
 
 class HistoryDetails extends StatelessWidget {
   const HistoryDetails({super.key});

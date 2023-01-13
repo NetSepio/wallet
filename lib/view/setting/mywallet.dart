@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:nucleus/utils/theme.dart';
-import 'package:nucleus/view/Home/home_ctr.dart';
-import 'package:nucleus/view/widgets/common.dart';
+import 'package:NetSepio/utils/theme.dart';
+import 'package:NetSepio/view/Home/home_ctr.dart';
+import 'package:NetSepio/view/widgets/common.dart';
 import 'package:web3dart/web3dart.dart';
 
 class MyWalletScreen extends StatelessWidget {

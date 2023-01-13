@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:nucleus/utils/theme.dart';
-import 'package:nucleus/utils/secure_storage.dart';
-import 'package:nucleus/view/Home/home_ctr.dart';
-import 'package:nucleus/view/Authentication/auth_controller.dart';
-import 'package:nucleus/view/Authentication/lock_screen.dart';
+import 'package:NetSepio/utils/theme.dart';
+import 'package:NetSepio/utils/secure_storage.dart';
+import 'package:NetSepio/view/Home/home_ctr.dart';
+import 'package:NetSepio/view/Authentication/auth_controller.dart';
+import 'package:NetSepio/view/Authentication/lock_screen.dart';
 
 height(double height) => SizedBox(height: height);
 width(double width) => SizedBox(width: width);

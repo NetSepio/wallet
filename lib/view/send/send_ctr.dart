@@ -4,10 +4,10 @@ import 'package:hive/hive.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:qrscan/qrscan.dart' as scanner;
 import 'package:get/get.dart';
-import 'package:nucleus/models/send_transaction_model.dart';
-import 'package:nucleus/models/transaction_history_model.dart';
-import 'package:nucleus/utils/secure_storage.dart';
-import 'package:nucleus/web3dart/web3dart.dart';
+import 'package:NetSepio/models/send_transaction_model.dart';
+import 'package:NetSepio/models/transaction_history_model.dart';
+import 'package:NetSepio/utils/secure_storage.dart';
+import 'package:NetSepio/web3dart/web3dart.dart';
 import 'package:web3dart/web3dart.dart';
 
 class SendController extends GetxController {
